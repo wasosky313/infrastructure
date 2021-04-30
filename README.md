@@ -16,8 +16,8 @@ docker-composer up
 
 docker run --rm -p 5672:5672 -p 8080:15672 rabbitmq:3-management
 
+http://my_host:8080
+
 user: guest
 
 password: guest
-
-http://my_host:8080
