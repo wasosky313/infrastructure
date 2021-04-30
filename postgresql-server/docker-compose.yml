@@ -1,0 +1,17 @@
+version: '2'
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.57.0/24
+        
+services:
+  user-image-db:
+    container_name: user-image-db
+    build: .
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
