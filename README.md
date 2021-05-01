@@ -9,6 +9,8 @@ git clone https://github.com/wasosky313/infrastructure.git
 
 cd infrastructure
 
+cd postgresql-server 
+
 docker-composer up
 
 
